@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 
 export default function Stripe() {
   return (
@@ -57,7 +57,8 @@ export default function Stripe() {
         </div>
       </div>
       <div>
-        <button className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i className="mdi mdi-lock-outline mr-1"></i> PAY NOW</button>
+        <Link href='/buyer' >
+          <a className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i className="mdi mdi-lock-outline mr-1"></i> PAY NOW</a></Link>
       </div>
     </div>
   )
