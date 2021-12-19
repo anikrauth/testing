@@ -2,18 +2,18 @@
 import React, { useState } from "react";
 
 export default function Buyer() {
-    const [showMe, setShowMe] = useState(false);
-    function toggle() {
-        setShowMe(!showMe);
-    }
+    // const [showMe, setShowMe] = useState(false);
+    // function toggle() {
+    //     setShowMe(!showMe);
+    // }
 
     return (
         <div className='buyerWrap'>
             <div className="direct min-w-screen min-h-screen bg-gray-200 flex items-center justify-center">
                 <div>
-                    <button onClick={toggle} className="masterCard block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i className="mdi mdi-lock-outline mr-1"></i> Payment</button>
+                    <button className="masterCard block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i className="mdi mdi-lock-outline mr-1"></i> Payment</button>
                 </div>
-                <div style={{
+                {/* <div style={{
                     display: showMe ? "block" : "none"
                 }}>
                     <div className="w-full mx-auto rounded-lg bg-white shadow-lg p-5 text-gray-700" >
@@ -82,7 +82,7 @@ export default function Buyer() {
                             <button className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i className="mdi mdi-lock-outline mr-1"></i> PAY NOW</button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>
